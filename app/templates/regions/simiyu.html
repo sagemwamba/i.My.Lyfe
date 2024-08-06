@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Simiyu</h1>
+    <p>Description of Simiyu region.</p>
+    <img src="{{ url_for('static', filename='images/simiyu.jpg') }}" alt="Simiyu">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='simiyu', district_name='itilia') }}" class="button">Itilia</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='simiyu', district_name='maswa') }}" class="button">Maswa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='simiyu', district_name='meatu') }}" class="button">Meatu</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='simiyu', district_name='bariadi') }}" class="button">Bariadi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='simiyu', district_name='itimbwa') }}" class="button">Itimbwa</a></h1>
+    </div>
+</div>
+{% endblock %}

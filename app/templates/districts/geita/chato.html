@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Chato</h2>
+    <h3>Location</h3>
+    <p>Chato is a district in the Geita Region, known for its fishing activities on Lake Victoria.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Chato is moderate, with reasonably priced housing and basic amenities.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Fishing: Lake Victoria fishing industry</li>
+        <li>Agriculture: Maize, cassava, and rice farming</li>
+        <li>Trade: Local markets and small-scale trade</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Chato has a tropical climate with two rainy seasons. Temperatures range from 20°C (68°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/chato_1.jpg') }}" alt="Chato Image 1">
+    <img src="{{ url_for('static', filename='images/chato_2.jpg') }}" alt="Chato Image 2">
+</section>
+{% endblock %}

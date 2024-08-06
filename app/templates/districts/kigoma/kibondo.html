@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kibondo</h2>
+    <h3>Location</h3>
+    <p>Kibondo is a district in the Kigoma Region, known for its agricultural activities.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kibondo is moderate, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, beans, and cassava farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kibondo experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/kibondo_1.jpg') }}" alt="Kibondo Image 1">
+    <img src="{{ url_for('static', filename='images/kibondo_2.jpg') }}" alt="Kibondo Image 2">
+</section>
+{% endblock %}

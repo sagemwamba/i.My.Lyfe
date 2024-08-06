@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Dodoma</h1>
+    <p>Description of Dodoma region.</p>
+    <img src="{{ url_for('static', filename='images/dodoma.jpg') }}" alt="Dodoma">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='bahi') }}" class="button">Bahi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='chamwino') }}" class="button">Chamwino</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='chemba') }}" class="button">Chemba</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='dodoma_district') }}" class="button">Dodoma District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='kondoa') }}" class="button">Kondoa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='kongwa') }}" class="button">Kongwa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dodoma', district_name='mpwapwa') }}" class="button">Mpwapwa</a></h1>
+    </div>
+</div>
+{% endblock %}

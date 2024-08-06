@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Chemba</h2>
+    <h3>Location</h3>
+    <p>Chemba is a district in the Dodoma Region, known for its agricultural activities.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Chemba is low, with affordable prices for housing and food.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, sorghum, and sunflower farming</li>
+        <li>Livestock: Cattle, goats, and sheep rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Chemba has a semi-arid climate with hot temperatures and seasonal rainfall. Temperatures range from 19°C (66°F) to 36°C (97°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/chemba_1.jpg') }}" alt="Chemba Image 1">
+    <img src="{{ url_for('static', filename='images/chemba_2.jpg') }}" alt="Chemba Image 2">
+</section>
+{% endblock %}

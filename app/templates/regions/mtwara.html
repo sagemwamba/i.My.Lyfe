@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Mtwara</h1>
+    <p>Description of Mtwara region.</p>
+    <img src="{{ url_for('static', filename='images/mtwara.jpg') }}" alt="Mtwara">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='mtwara', district_name='masasi') }}" class="button">Masasi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mtwara', district_name='mtwara_rural') }}" class="button">Mtwara Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mtwara', district_name='mtwara_urban') }}" class="button">Mtwara Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mtwara', district_name='nandembo') }}" class="button">Nandembo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mtwara', district_name='newala') }}" class="button">Newala</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mtwara', district_name='tandahimba') }}" class="button">Tandahimba</a></h1>
+    </div>
+</div>
+{% endblock %}

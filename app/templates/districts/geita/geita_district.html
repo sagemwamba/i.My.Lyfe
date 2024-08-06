@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Geita District</h2>
+    <h3>Location</h3>
+    <p>Geita District is located in the Geita Region, known for its gold mining activities.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Geita District is moderate, with varying prices for housing and amenities depending on proximity to mining areas.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Mining: Large-scale and small-scale gold mining</li>
+        <li>Agriculture: Maize, cassava, and rice farming</li>
+        <li>Trade: Shops, markets, and businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Geita District experiences a tropical climate with two rainy seasons. Temperatures range from 20°C (68°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/geita_district_1.jpg') }}" alt="Geita District Image 1">
+    <img src="{{ url_for('static', filename='images/geita_district_2.jpg') }}" alt="Geita District Image 2">
+</section>
+{% endblock %}

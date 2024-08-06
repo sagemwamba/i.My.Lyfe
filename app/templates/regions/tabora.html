@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Tabora</h1>
+    <p>Description of Tabora region.</p>
+    <img src="{{ url_for('static', filename='images/tabora.jpg') }}" alt="Tabora">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='igunga') }}" class="button">Igunga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='kaliua') }}" class="button">Kaliua</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='nzega') }}" class="button">Nzega</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='sikonge') }}" class="button">Sikonge</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='tabora_district') }}" class="button">Tabora District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='tabora_urban') }}" class="button">Tabora Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tabora', district_name='uyui') }}" class="button">Uyui</a></h1>
+    </div>
+</div>
+{% endblock %}

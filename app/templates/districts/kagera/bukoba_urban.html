@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Bukoba Urban</h2>
+    <h3>Location</h3>
+    <p>Bukoba Urban is a district in the Kagera Region, located in the town of Bukoba along the shores of Lake Victoria.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Bukoba Urban is moderate, with varying prices for housing and amenities depending on proximity to the town center.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Coffee, bananas, and beans farming</li>
+        <li>Fishing: Lake Victoria fishing industry</li>
+        <li>Trade: Shops, markets, and businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Bukoba Urban experiences a tropical climate with two rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/bukoba_urban_1.jpg') }}" alt="Bukoba Urban Image 1">
+    <img src="{{ url_for('static', filename='images/bukoba_urban_2.jpg') }}" alt="Bukoba Urban Image 2">
+</section>
+{% endblock %}

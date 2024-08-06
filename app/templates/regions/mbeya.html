@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Mbeya</h1>
+    <p>Description of Mbeya region.</p>
+    <img src="{{ url_for('static', filename='images/mbeya.jpg') }}" alt="Mbeya">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='mbeya', district_name='chunya') }}" class="button">Chunya</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mbeya', district_name='kyela') }}" class="button">Kyela</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mbeya', district_name='mbeya_rural') }}" class="button">Mbeya Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mbeya', district_name='mbeya_urban') }}" class="button">Mbeya Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mbeya', district_name='mbozi') }}" class="button">Mbozi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mbeya', district_name='rungwe') }}" class="button">Rungwe</a></h1>
+    </div>
+</div>
+{% endblock %}

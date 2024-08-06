@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Muleba</h2>
+    <h3>Location</h3>
+    <p>Muleba is a district in the Kagera Region, located in the northwestern part of Tanzania along the shores of Lake Victoria.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Muleba is moderate, with reasonably priced housing and basic amenities.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Coffee, bananas, and beans farming</li>
+        <li>Fishing: Lake Victoria fishing industry</li>
+        <li>Trade: Local markets and small-scale trade</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Muleba has a tropical climate with two rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/muleba_1.jpg') }}" alt="Muleba Image 1">
+    <img src="{{ url_for('static', filename='images/muleba_2.jpg') }}" alt="Muleba Image 2">
+</section>
+{% endblock %}

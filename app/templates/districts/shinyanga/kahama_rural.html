@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kahama Rural</h2>
+    <h3>Location</h3>
+    <p>Kahama Rural is a district in the Shinyanga Region, located in northwestern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kahama Rural is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, rice, and cotton farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+        <li>Mining: Small-scale gold mining</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kahama Rural experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/kahama_rural_1.jpg') }}" alt="Kahama Rural Image 1">
+    <img src="{{ url_for('static', filename='images/kahama_rural_2.jpg') }}" alt="Kahama Rural Image 2">
+</section>
+{% endblock %}

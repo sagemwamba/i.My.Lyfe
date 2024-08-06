@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Bukombe</h2>
+    <h3>Location</h3>
+    <p>Bukombe is a district in the Geita Region, located in northwestern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Bukombe is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, cassava, and rice farming</li>
+        <li>Mining: Small-scale gold mining</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Bukombe experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/bukombe_1.jpg') }}" alt="Bukombe Image 1">
+    <img src="{{ url_for('static', filename='images/bukombe_2.jpg') }}" alt="Bukombe Image 2">
+</section>
+{% endblock %}

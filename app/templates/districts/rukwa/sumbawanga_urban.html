@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Sumbawanga Urban</h2>
+    <h3>Location</h3>
+    <p>Sumbawanga Urban is a district in the Rukwa Region, centered around the town of Sumbawanga.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Sumbawanga Urban is moderate, with varying prices for housing and amenities depending on proximity to the town center.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, beans, and sunflower farming</li>
+        <li>Trade: Shops, markets, and businesses</li>
+        <li>Forestry: Timber and wood products</li>
+        <li>Services: Education, healthcare, and tourism</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Sumbawanga Urban experiences a temperate climate with two main rainy seasons. Temperatures range from 15°C (59°F) to 25°C (77°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/sumbawanga_urban_1.jpg') }}" alt="Sumbawanga Urban Image 1">
+    <img src="{{ url_for('static', filename='images/sumbawanga_urban_2.jpg') }}" alt="Sumbawanga Urban Image 2">
+</section>
+{% endblock %}

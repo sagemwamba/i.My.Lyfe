@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Arusha</h1>
+    <p>Here are your districts. Choose your favorite to explore detailed information about each area's economic opportunities, cost of living, weather conditions, and more."
+
+    </p>
+    <img src="{{ url_for('static', filename='images/edse.png') }}" alt="Arusha">
+    <h2>Districts</h2>
+    <div class="grid-container">
+        <a href="{{ url_for('main.district', region_name='arusha', district_name='arusha_district') }}" class="button">Arusha District</a>
+        <a href="{{ url_for('main.district', region_name='arusha', district_name='arumeru') }}" class="button">Arumeru</a>
+        <a href="{{ url_for('main.district', region_name='arusha', district_name='karatu') }}" class="button">Karatu</a>
+        <a href="{{ url_for('main.district', region_name='arusha', district_name='longido') }}" class="button">Longido</a>
+        <a href="{{ url_for('main.district', region_name='arusha', district_name='monduli') }}" class="button">Monduli</a>
+        <a href="{{ url_for('main.district', region_name='arusha', district_name='ngorongoro') }}" class="button">Ngorongoro</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Geita</h1>
+    <p>Description of Geita region.</p>
+    <img src="{{ url_for('static', filename='images/geita.jpg') }}" alt="Geita">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='geita', district_name='bukombe') }}" class="button">Bukombe</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='geita', district_name='chato') }}" class="button">Chato</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='geita', district_name='geita_district') }}" class="button">Geita District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='geita', district_name='mbongwe') }}" class="button">Mbongwe</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='geita', district_name='nyang_hwale') }}" class="button">Nyang’hwale</a></h1>
+    </div>
+</div>
+{% endblock %}

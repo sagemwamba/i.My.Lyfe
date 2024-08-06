@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kondoa</h2>
+    <h3>Location</h3>
+    <p>Kondoa is a district in the Dodoma Region, located in central Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kondoa is relatively low, with affordable prices for housing and basic goods.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, millet, and sorghum farming</li>
+        <li>Livestock: Cattle, goats, and sheep rearing</li>
+        <li>Trade: Local markets and small-scale trade</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kondoa experiences a semi-arid climate with hot temperatures and seasonal rainfall. Temperatures range from 18°C (64°F) to 34°C (93°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/kondoa_1.jpg') }}" alt="Kondoa Image 1">
+    <img src="{{ url_for('static', filename='images/kondoa_2.jpg') }}" alt="Kondoa Image 2">
+</section>
+{% endblock %}

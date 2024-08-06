@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Shinyanga Urban</h2>
+    <h3>Location</h3>
+    <p>Shinyanga Urban is a district in the Shinyanga Region, centered around the town of Shinyanga.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Shinyanga Urban is moderate, with varying prices for housing and amenities depending on proximity to the town center.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, rice, and cotton farming</li>
+        <li>Trade: Shops, markets, and businesses</li>
+        <li>Mining: Small-scale gold mining</li>
+        <li>Services: Education, healthcare, and tourism</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Shinyanga Urban experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/shinyanga_urban_1.jpg') }}" alt="Shinyanga Urban Image 1">
+    <img src="{{ url_for('static', filename='images/shinyanga_urban_2.jpg') }}" alt="Shinyanga Urban Image 2">
+</section>
+{% endblock %}

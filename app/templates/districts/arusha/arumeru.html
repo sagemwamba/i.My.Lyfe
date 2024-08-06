@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Arumeru</h2>
+    <h3>Location</h3>
+    <p>Arumeru is located in the Arusha Region, known for its beautiful landscapes and agricultural activities.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Arumeru is relatively affordable, with lower housing and food prices compared to urban areas.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Coffee, maize, and horticulture.</li>
+        <li>Tourism: Proximity to Mount Meru and national parks.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Arumeru has a mild climate with temperatures ranging from 15°C (59°F) to 28°C (82°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/arumeru_1.jpg') }}" alt="Arumeru Image 1">
+    <img src="{{ url_for('static', filename='images/arumeru_2.jpg') }}" alt="Arumeru Image 2">
+</section>
+{% endblock %}

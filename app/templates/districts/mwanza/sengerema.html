@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Sengerema</h2>
+    <h3>Location</h3>
+    <p>Sengerema is a district in the Mwanza Region, located in northern Tanzania along the shores of Lake Victoria.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Sengerema is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, rice, and vegetable farming</li>
+        <li>Fishing: Lake Victoria fishing industry</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Sengerema experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/sengerema_1.jpg') }}" alt="Sengerema Image 1">
+    <img src="{{ url_for('static', filename='images/sengerema_2.jpg') }}" alt="Sengerema Image 2">
+</section>
+{% endblock %}

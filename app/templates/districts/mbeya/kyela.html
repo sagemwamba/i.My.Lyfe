@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kyela</h2>
+    <h3>Location</h3>
+    <p>Kyela is a district in the Mbeya Region, located along the northern shores of Lake Nyasa.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kyela is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Rice, cocoa, and banana farming</li>
+        <li>Fishing: Lake Nyasa fishing industry</li>
+        <li>Trade: Local markets and small businesses</li>
+        <li>Tourism: Lake Nyasa beaches and attractions</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kyela experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/kyela_1.jpg') }}" alt="Kyela Image 1">
+    <img src="{{ url_for('static', filename='images/kyela_2.jpg') }}" alt="Kyela Image 2">
+</section>
+{% endblock %}

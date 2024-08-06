@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Kigoma</h1>
+    <p>Description of Kigoma region.</p>
+    <img src="{{ url_for('static', filename='images/kigoma.jpg') }}" alt="Kigoma">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='buhigwe') }}" class="button">Buhigwe</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='kasulu') }}" class="button">Kasulu</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='kibondo') }}" class="button">Kibondo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='kigoma_rural') }}" class="button">Kigoma Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='kigoma_urban') }}" class="button">Kigoma Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='kakonko') }}" class="button">Kakonko</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kigoma', district_name='uvinza') }}" class="button">Uvinza</a></h1>
+    </div>
+</div>
+{% endblock %}

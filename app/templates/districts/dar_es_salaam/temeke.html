@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Temeke</h2>
+    <h3>Location</h3>
+    <p>Temeke is located in the southern part of the Dar es Salaam Region, known for its industrial and residential areas.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Temeke is relatively affordable, with lower housing and food prices compared to other parts of Dar es Salaam.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Industry: Numerous factories and industrial plants.</li>
+        <li>Trade: Local markets and small businesses.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Temeke experiences a tropical climate with hot and humid conditions throughout the year. Temperatures range from 22°C (72°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/temeke_1.jpg') }}" alt="Temeke Image 1">
+    <img src="{{ url_for('static', filename='images/temeke_2.jpg') }}" alt="Temeke Image 2">
+</section>
+{% endblock %}

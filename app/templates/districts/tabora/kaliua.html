@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kaliua</h2>
+    <h3>Location</h3>
+    <p>Kaliua is a district in the Tabora Region, located in central Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kaliua is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, rice, and tobacco farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+        <li>Forestry: Timber and wood products</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kaliua experiences a tropical savanna climate with a single rainy season. Temperatures range from 20°C (68°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h>
+    </p>
+    <img src="{{ url_for('static', filename='images/kaliua_1.jpg') }}" alt="Kaliua Image 1">
+    <img src="{{ url_for('static', filename='images/kaliua_2.jpg') }}" alt="Kaliua Image 2">
+</section>
+{% endblock %}

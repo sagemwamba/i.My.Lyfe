@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Shinyanga</h1>
+    <p>Description of Shinyanga region.</p>
+    <img src="{{ url_for('static', filename='images/shinyanga.jpg') }}" alt="Shinyanga">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='shinyanga', district_name='kahama_rural') }}" class="button">Kahama Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='shinyanga', district_name='kahama_urban') }}" class="button">Kahama Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='shinyanga', district_name='kishapu') }}" class="button">Kishapu</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='shinyanga', district_name='shinyanga_rural') }}" class="button">Shinyanga Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='shinyanga', district_name='shinyanga_urban') }}" class="button">Shinyanga Urban</a></h1>
+    </div>
+</div>
+{% endblock %}

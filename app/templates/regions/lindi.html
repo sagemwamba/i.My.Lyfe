@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Lindi</h1>
+    <p>Description of Lindi region.</p>
+    <img src="{{ url_for('static', filename='images/lindi.jpg') }}" alt="Lindi">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='lindi', district_name='kilwa') }}" class="button">Kilwa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='lindi', district_name='lindi_district') }}" class="button">Lindi District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='lindi', district_name='lindi_urban') }}" class="button">Lindi Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='lindi', district_name='liwale') }}" class="button">Liwale</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='lindi', district_name='nachingwea') }}" class="button">Nachingwea</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='lindi', district_name='ruangwa') }}" class="button">Ruangwa</a></h1>
+    </div>
+</div>
+{% endblock %}

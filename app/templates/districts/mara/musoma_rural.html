@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Musoma Rural</h2>
+    <h3>Location</h3>
+    <p>Musoma Rural is a district in the Mara Region, surrounding the town of Musoma.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Musoma Rural is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, rice, and cassava farming</li>
+        <li>Fishing: Lake Victoria fishing industry</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Musoma Rural experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/musoma_rural_1.jpg') }}" alt="Musoma Rural Image 1">
+    <img src="{{ url_for('static', filename='images/musoma_rural_2.jpg') }}" alt="Musoma Rural Image 2">
+</section>
+{% endblock %}

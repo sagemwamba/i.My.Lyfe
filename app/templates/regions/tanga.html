@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Tanga</h1>
+    <p>Description of Tanga region.</p>
+    <img src="{{ url_for('static', filename='images/tanga.jpg') }}" alt="Tanga">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='handeni') }}" class="button">Handeni</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='kilindi') }}" class="button">Kilindi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='korogwe') }}" class="button">Korogwe</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='lushoto') }}" class="button">Lushoto</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='muheza') }}" class="button">Muheza</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='pangani') }}" class="button">Pangani</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='tanga_district') }}" class="button">Tanga District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='tanga_urban') }}" class="button">Tanga Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='tanga', district_name='mkinga') }}" class="button">Mkinga</a></h1>
+    </div>
+</div>
+{% endblock %}

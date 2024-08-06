@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Zanzibar South</h1>
+    <p>Description of Zanzibar South region.</p>
+    <img src="{{ url_for('static', filename='images/zanzibar_south.jpg') }}" alt="Zanzibar South">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='zanzibar_south', district_name='kati') }}" class="button">Kati</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='zanzibar_south', district_name='kusini') }}" class="button">Kusini</a></h1>
+    </div>
+</div>
+{% endblock %}

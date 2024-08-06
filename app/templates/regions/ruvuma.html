@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Ruvuma</h1>
+    <p>Description of Ruvuma region.</p>
+    <img src="{{ url_for('static', filename='images/ruvuma.jpg') }}" alt="Ruvuma">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='ruvuma', district_name='mbinga') }}" class="button">Mbinga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='ruvuma', district_name='nyasa') }}" class="button">Nyasa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='ruvuma', district_name='songea_rural') }}" class="button">Songea Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='ruvuma', district_name='songea_urban') }}" class="button">Songea Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='ruvuma', district_name='tinga') }}" class="button">Tinga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='ruvuma', district_name='namtumbo') }}" class="button">Namtumbo</a></h1>
+    </div>
+</div>
+{% endblock %}

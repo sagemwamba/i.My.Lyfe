@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Rukwa</h1>
+    <p>Description of Rukwa region.</p>
+    <img src="{{ url_for('static', filename='images/rukwa.jpg') }}" alt="Rukwa">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='rukwa', district_name='kalambo') }}" class="button">Kalambo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='rukwa', district_name='nkasi') }}" class="button">Nkasi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='rukwa', district_name='sumbawanga_rural') }}" class="button">Sumbawanga Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='rukwa', district_name='sumbawanga_urban') }}" class="button">Sumbawanga Urban</a></h1>
+    </div>
+</div>
+{% endblock %}

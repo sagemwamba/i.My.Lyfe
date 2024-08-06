@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Ulanga</h2>
+    <h3>Location</h3>
+    <p>Ulanga is a district in the Morogoro Region, located in southeastern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Ulanga is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Rice, maize, and sesame farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Ulanga experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/ulanga_1.jpg') }}" alt="Ulanga Image 1">
+    <img src="{{ url_for('static', filename='images/ulanga_2.jpg') }}" alt="Ulanga Image 2">
+</section>
+{% endblock %}

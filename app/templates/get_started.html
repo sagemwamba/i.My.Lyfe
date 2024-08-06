@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Get Started with iMyLyfe</h1>
+    <p> Welcome to iMyLyfe! This platform is designed to help you explore the regions of Tanzania and find valuable information about each area. Follow these steps to make the most out of iMyLyfe:
+
+        Explore Regions: Click on the "View Regions" button below to see a list of all the regions in Tanzania.
+        Select a Region: Choose a region that interests you. You will be taken to a page with detailed information about that region.
+        Explore Districts: Each region page includes links to its districts. Click on a district to get specific details about that area.
+        Learn and Compare: Use the information provided to learn about economic opportunities, cost of living, weather conditions, and more. Compare different regions and districts to find the best match for your needs.
+    
+    We hope you find iMyLyfe useful and informative. If you have any questions or need further assistance, feel free to contact us. </p>
+    <p>
+        Tuna Thamini Maoni Yako!
+Ningependa kusikia mawazo yako! Ikiwa una mapendekezo, maoni, au taarifa zinazoweza kuboresha mradi huu, tafadhali usisite kuwasiliana nami. Maoni yako ni muhimu sana kwangu na yatasaidia kuboresha mradi huu. Unaweza kunifikia kupitia Linktree yangu,
+ ambapo utapata njia mbalimbali za kunifikia. Asante kwa kusaidia kufanya mradi huu kuwa bora zaidi!
+Kwa mawasiliano zaidi, ni mimi, Sage Mwamba.
+<a href="https://linktr.ee/sage.mwamba" class="btn">wasiliana nami!</a>
+
+
+    </p>
+    <a href="{{ url_for('main.regions') }}" class="button">View Regions</a>
+</div>
+{% endblock %}

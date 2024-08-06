@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Ubungo</h2>
+    <h3>Location</h3>
+    <p>Ubungo is located in the Dar es Salaam Region, known for its transportation hub and residential areas.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Ubungo is moderate, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Transport: Major bus terminals and transportation services.</li>
+        <li>Trade: Local markets and small businesses.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Ubungo experiences a tropical climate with hot and humid conditions throughout the year. Temperatures range from 22°C (72°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/ubungo_1.jpg') }}" alt="Ubungo Image 1">
+    <img src="{{ url_for('static', filename='images/ubungo_2.jpg') }}" alt="Ubungo Image 2">
+</section>
+{% endblock %}

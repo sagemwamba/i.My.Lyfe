@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Ngorongoro</h2>
+    <h3>Location</h3>
+    <p>Ngorongoro is located in the Arusha Region, famous for the Ngorongoro Crater and wildlife.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Ngorongoro is moderate, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Tourism: Safari tours and wildlife viewing.</li>
+        <li>Agriculture: Maize and vegetable farming.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Ngorongoro has a mild climate with temperatures ranging from 10°C (50°F) to 25°C (77°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/ngorongoro_1.jpg') }}" alt="Ngorongoro Image 1">
+    <img src="{{ url_for('static', filename='images/ngorongoro_2.jpg') }}" alt="Ngorongoro Image 2">
+</section>
+{% endblock %}

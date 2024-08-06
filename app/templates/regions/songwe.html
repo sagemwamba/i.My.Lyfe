@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Songwe</h1>
+    <p>Description of Songwe region.</p>
+    <img src="{{ url_for('static', filename='images/songwe.jpg') }}" alt="Songwe">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='songwe', district_name='ileje') }}" class="button">Ileje</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='songwe', district_name='mwinga') }}" class="button">Mwinga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='songwe', district_name='songwe_district') }}" class="button">Songwe District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='songwe', district_name='tunduma') }}" class="button">Tunduma</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='songwe', district_name='tunduru') }}" class="button">Tunduru</a></h1>
+    </div>
+</div>
+{% endblock %}

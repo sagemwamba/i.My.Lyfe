@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kisarawe</h2>
+    <h3>Location</h3>
+    <p>Kisarawe is a district in the Pwani Region, located in eastern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kisarawe is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Cashew nuts, coconut, and maize farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+        <li>Forestry: Timber and wood products</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kisarawe experiences a tropical climate with two main rainy seasons. Temperatures range from 23°C (73°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/kisarawe_1.jpg') }}" alt="Kisarawe Image 1">
+    <img src="{{ url_for('static', filename='images/kisarawe_2.jpg') }}" alt="Kisarawe Image 2">
+</section>
+{% endblock %}

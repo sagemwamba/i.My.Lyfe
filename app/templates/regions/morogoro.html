@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Morogoro</h1>
+    <p>Description of Morogoro region.</p>
+    <img src="{{ url_for('static', filename='images/morogoro.jpg') }}" alt="Morogoro">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='gairo') }}" class="button">Gairo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='kilosa') }}" class="button">Kilosa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='morogoro_rural') }}" class="button">Morogoro Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='morogoro_urban') }}" class="button">Morogoro Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='kilombero') }}" class="button">Kilombero</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='ulanga') }}" class="button">Ulanga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='morogoro', district_name='mvomero') }}" class="button">Mvomero</a></h1>
+    </div>
+</div>
+{% endblock %}

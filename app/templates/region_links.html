@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <p>"Tanzania is home to 31 unique regions, each offering a variety of activities, opportunities, and lifestyles. Please explore the regions to find detailed information about economic opportunities, cost of living, weather conditions, and more. Select a region that interests you to learn more about its districts and what it has to offer."
+
+        </p>
+        <img src="{{ url_for('static', filename='images/as.png') }}" alt="Arusha" class="pretty-container">
+    <div class="grid-container">
+        <a href="{{ url_for('main.region', region_name='arusha') }}" class="button">Arusha</a>
+        <a href="{{ url_for('main.region', region_name='dar_es_salaam') }}" class="button">Dar es Salaam</a>
+        <a href="{{ url_for('main.region', region_name='dodoma') }}" class="button">Dodoma</a>
+        <a href="{{ url_for('main.region', region_name='geita') }}" class="button">Geita</a>
+        <a href="{{ url_for('main.region', region_name='iringa') }}" class="button">Iringa</a>
+        <a href="{{ url_for('main.region', region_name='kagera') }}" class="button">Kagera</a>
+        <a href="{{ url_for('main.region', region_name='katavi') }}" class="button">Katavi</a>
+        <a href="{{ url_for('main.region', region_name='kigoma') }}" class="button">Kigoma</a>
+        <a href="{{ url_for('main.region', region_name='kilimanjaro') }}" class="button">Kilimanjaro</a>
+        <a href="{{ url_for('main.region', region_name='lindi') }}" class="button">Lindi</a>
+        <a href="{{ url_for('main.region', region_name='manyara') }}" class="button">Manyara</a>
+        <a href="{{ url_for('main.region', region_name='mara') }}" class="button">Mara</a>
+        <a href="{{ url_for('main.region', region_name='mbeya') }}" class="button">Mbeya</a>
+        <a href="{{ url_for('main.region', region_name='mjini_magharibi') }}" class="button">Mjini Magharibi</a>
+        <a href="{{ url_for('main.region', region_name='morogoro') }}" class="button">Morogoro</a>
+        <a href="{{ url_for('main.region', region_name='mtwara') }}" class="button">Mtwara</a>
+        <a href="{{ url_for('main.region', region_name='mwanza') }}" class="button">Mwanza</a>
+        <a href="{{ url_for('main.region', region_name='njombe') }}" class="button">Njombe</a>
+        <a href="{{ url_for('main.region', region_name='pemba_north') }}" class="button">Pemba North</a>
+        <a href="{{ url_for('main.region', region_name='pemba_south') }}" class="button">Pemba South</a>
+        <a href="{{ url_for('main.region', region_name='pwani') }}" class="button">Pwani</a>
+        <a href="{{ url_for('main.region', region_name='rukwa') }}" class="button">Rukwa</a>
+        <a href="{{ url_for('main.region', region_name='ruvuma') }}" class="button">Ruvuma</a>
+        <a href="{{ url_for('main.region', region_name='shinyanga') }}" class="button">Shinyanga</a>
+        <a href="{{ url_for('main.region', region_name='simiyu') }}" class="button">Simiyu</a>
+        <a href="{{ url_for('main.region', region_name='singida') }}" class="button">Singida</a>
+        <a href="{{ url_for('main.region', region_name='songwe') }}" class="button">Songwe</a>
+        <a href="{{ url_for('main.region', region_name='tabora') }}" class="button">Tabora</a>
+        <a href="{{ url_for('main.region', region_name='tanga') }}" class="button">Tanga</a>
+        <a href="{{ url_for('main.region', region_name='zanzibar_north') }}" class="button">Zanzibar North</a>
+        <a href="{{ url_for('main.region', region_name='zanzibar_south') }}" class="button">Zanzibar South</a>
+        <a href="{{ url_for('main.region', region_name='zanzibar_west') }}" class="button">Zanzibar West</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="pretty-container">
+    <h2>Ilala</h2>
+    <h3>Location</h3>
+    <p>Ilala is a district in the Dar es Salaam Region, centrally located and known for being a commercial hub.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Ilala is higher compared to other districts in Dar es Salaam due to its central location and commercial importance.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Trade: Numerous shops, markets, and businesses.</li>
+        <li>Industry: Several manufacturing plants and warehouses.</li>
+        <li>Services: Financial institutions, hotels, and restaurants.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Ilala experiences a tropical climate with hot and humid conditions throughout the year. Temperatures range from 20°C (68°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/ilala_1.jpg') }}" alt="Ilala Image 1">
+    <img src="{{ url_for('static', filename='images/ilala_2.jpg') }}" alt="Ilala Image 2">
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Bariadi</h2>
+    <h3>Location</h3>
+    <p>Bariadi is a district in the Simiyu Region, located in northern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Bariadi is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, rice, and cotton farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Bariadi experiences a tropical climate with two main rainy seasons. Temperatures range from 20°C (68°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/bariadi_1.jpg') }}" alt="Bariadi Image 1">
+    <img src="{{ url_for('static', filename='images/bariadi_2.jpg') }}" alt="Bariadi Image 2">
+</section>
+{% endblock %}

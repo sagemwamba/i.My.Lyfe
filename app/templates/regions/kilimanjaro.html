@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Kilimanjaro</h1>
+    <p>Description of Kilimanjaro region.</p>
+    <img src="{{ url_for('static', filename='images/kilimanjaro.jpg') }}" alt="Kilimanjaro">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='hai') }}" class="button">Hai</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='moshi_rural') }}" class="button">Moshi Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='moshi_urban') }}" class="button">Moshi Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='mwanga') }}" class="button">Mwanga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='rombo') }}" class="button">Rombo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='same') }}" class="button">Same</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kilimanjaro', district_name='siha') }}" class="button">Siha</a></h1>
+    </div>
+</div>
+{% endblock %}

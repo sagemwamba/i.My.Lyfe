@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Dar es Salaam</h1>
+    <p>Description of Dar es Salaam region.</p>
+    <img src="{{ url_for('static', filename='images/dar_es_salaam.jpg') }}" alt="Dar es Salaam">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='dar_es_salaam', district_name='ilala') }}" class="button">Ilala</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dar_es_salaam', district_name='kinondoni') }}" class="button">Kinondoni</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dar_es_salaam', district_name='temeke') }}" class="button">Temeke</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dar_es_salaam', district_name='kigamboni') }}" class="button">Kigamboni</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='dar_es_salaam', district_name='ubungo') }}" class="button">Ubungo</a></h1>
+    </div>
+</div>
+{% endblock %}

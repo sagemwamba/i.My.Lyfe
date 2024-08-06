@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Micheweni</h2>
+    <h3>Location</h3>
+    <p>Micheweni is a district in the Pemba North Region, located on Pemba Island in Zanzibar.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Micheweni is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Clove, coconut, and spice farming</li>
+        <li>Fishing: Coastal fishing industry</li>
+        <li>Trade: Local markets and small businesses</li>
+        <li>Tourism: Coastal attractions and cultural tourism</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Micheweni experiences a tropical climate with two main rainy seasons. Temperatures range from 23°C (73°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/micheweni_1.jpg') }}" alt="Micheweni Image 1">
+    <img src="{{ url_for('static', filename='images/micheweni_2.jpg') }}" alt="Micheweni Image 2">
+</section>
+{% endblock %}

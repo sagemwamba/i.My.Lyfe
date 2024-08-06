@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Kagera</h1>
+    <p>Description of Kagera region.</p>
+    <img src="{{ url_for('static', filename='images/kagera.jpg') }}" alt="Kagera">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='biharamulo') }}" class="button">Biharamulo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='bukoba_rural') }}" class="button">Bukoba Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='bukoba_urban') }}" class="button">Bukoba Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='karagwe') }}" class="button">Karagwe</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='kyerwa') }}" class="button">Kyerwa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='missenyi') }}" class="button">Missenyi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='muleba') }}" class="button">Muleba</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='kagera', district_name='ngara') }}" class="button">Ngara</a></h1>
+    </div>
+</div>
+{% endblock %}

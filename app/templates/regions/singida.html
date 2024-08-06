@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Singida</h1>
+    <p>Description of Singida region.</p>
+    <img src="{{ url_for('static', filename='images/singida.jpg') }}" alt="Singida">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='singida', district_name='iramba') }}" class="button">Iramba</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='singida', district_name='itigi') }}" class="button">Itigi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='singida', district_name='manyoni') }}" class="button">Manyoni</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='singida', district_name='mkalama') }}" class="button">Mkalama</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='singida', district_name='singida_rural') }}" class="button">Singida Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='singida', district_name='singida_urban') }}" class="button">Singida Urban</a></h1>
+    </div>
+</div>
+{% endblock %}

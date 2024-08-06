@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Iringa</h1>
+    <p>Description of Iringa region.</p>
+    <img src="{{ url_for('static', filename='images/iringa.jpg') }}" alt="Iringa">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='iringa', district_name='iringa_district') }}" class="button">Iringa District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='iringa', district_name='kilolo') }}" class="button">Kilolo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='iringa', district_name='mafinga') }}" class="button">Mafinga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='iringa', district_name='mufindi') }}" class="button">Mufindi</a></h1>
+    </div>
+</div>
+{% endblock %}

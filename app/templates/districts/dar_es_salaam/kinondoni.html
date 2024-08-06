@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kinondoni</h2>
+    <h3>Location</h3>
+    <p>Kinondoni is located in the Dar es Salaam Region, known for its residential and commercial areas.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kinondoni is moderate, with a mix of affordable and high-end housing options.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Real Estate: Numerous residential and commercial developments.</li>
+        <li>Services: Shopping malls, restaurants, and entertainment venues.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Kinondoni experiences a tropical climate with hot and humid conditions throughout the year. Temperatures range from 22°C (72°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/kinondoni_1.jpg') }}" alt="Kinondoni Image 1">
+    <img src="{{ url_for('static', filename='images/kinondoni_2.jpg') }}" alt="Kinondoni Image 2">
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Njombe</h1>
+    <p>Description of Njombe region.</p>
+    <img src="{{ url_for('static', filename='images/njombe.jpg') }}" alt="Njombe">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='njombe', district_name='ludewa') }}" class="button">Ludewa</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='njombe', district_name='makete') }}" class="button">Makete</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='njombe', district_name='njombe_district') }}" class="button">Njombe District</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='njombe', district_name='njombe_town') }}" class="button">Njombe Town</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='njombe', district_name='wanging_ombe') }}" class="button">Wanging’ombe</a></h1>
+    </div>
+</div>
+{% endblock %}

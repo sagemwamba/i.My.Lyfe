@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Muheza</h2>
+    <h3>Location</h3>
+    <p>Muheza is a district in the Tanga Region, located in northeastern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Muheza is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Maize, cassava, and coconut farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Muheza experiences a tropical savanna climate with two main rainy seasons. Temperatures range from 22°C (72°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/muheza_1.jpg') }}" alt="Muheza Image 1">
+    <img src="{{ url_for('static', filename='images/muheza_2.jpg') }}" alt="Muheza Image 2">
+</section>
+{% endblock %}

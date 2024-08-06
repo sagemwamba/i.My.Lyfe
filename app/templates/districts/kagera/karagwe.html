@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Karagwe</h2>
+    <h3>Location</h3>
+    <p>Karagwe is a district in the Kagera Region, located in the northwestern part of Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Karagwe is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Bananas, coffee, and beans farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Karagwe experiences a tropical climate with two main rainy seasons. Temperatures range from 18°C (64°F) to 28°C (82°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/karagwe_1.jpg') }}" alt="Karagwe Image 1">
+    <img src="{{ url_for('static', filename='images/karagwe_2.jpg') }}" alt="Karagwe Image 2">
+</section>
+{% endblock %}

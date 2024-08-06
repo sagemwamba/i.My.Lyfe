@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Siha</h2>
+    <h3>Location</h3>
+    <p>Siha is a district in the Kilimanjaro Region, located in northern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Siha is moderate, with reasonably priced housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Coffee, bananas, and maize farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Siha experiences a temperate climate with two main rainy seasons. Temperatures range from 15°C (59°F) to 28°C (82°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/siha_1.jpg') }}" alt="Siha Image 1">
+    <img src="{{ url_for('static', filename='images/siha_2.jpg') }}" alt="Siha Image 2">
+</section>
+{% endblock %}

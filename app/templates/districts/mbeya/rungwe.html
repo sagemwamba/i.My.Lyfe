@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Rungwe</h2>
+    <h3>Location</h3>
+    <p>Rungwe is a district in the Mbeya Region, located in southwestern Tanzania.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Rungwe is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Tea, coffee, and banana farming</li>
+        <li>Livestock: Cattle, goats, and poultry rearing</li>
+        <li>Trade: Local markets and small businesses</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Rungwe experiences a temperate climate with two main rainy seasons. Temperatures range from 15°C (59°F) to 25°C (77°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/rungwe_1.jpg') }}" alt="Rungwe Image 1">
+    <img src="{{ url_for('static', filename='images/rungwe_2.jpg') }}" alt="Rungwe Image 2">
+</section>
+{% endblock %}

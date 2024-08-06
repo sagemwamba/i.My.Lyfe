@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Manyara</h1>
+    <p>Description of Manyara region.</p>
+    <img src="{{ url_for('static', filename='images/manyara.jpg') }}" alt="Manyara">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='manyara', district_name='babati_rural') }}" class="button">Babati Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='manyara', district_name='babati_urban') }}" class="button">Babati Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='manyara', district_name='hanang') }}" class="button">Hanang</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='manyara', district_name='kiteto') }}" class="button">Kiteto</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='manyara', district_name='mbulu') }}" class="button">Mbulu</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='manyara', district_name='simanjiro') }}" class="button">Simanjiro</a></h1>
+    </div>
+</div>
+{% endblock %}

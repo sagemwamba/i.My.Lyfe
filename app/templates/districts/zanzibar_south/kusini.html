@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Kusini</h2>
+    <h3>Location</h3>
+    <p>Kusini is a district in the Zanzibar South Region, located in the southern part of Unguja Island, Zanzibar.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Kusini is moderate, with varying prices for housing and amenities depending on proximity to tourist areas and agricultural zones.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Agriculture: Clove, coconut, and spice farming</li>
+        <li>Fishing: Coastal fishing industry</li>
+        <li>Trade: Local markets and small businesses</li>
+        <li>Tourism: Beach resorts and cultural sites</li>
+    </ul>
+
+    <h3>Weather Conditions</h</p>
+    <p>Kusini experiences a tropical climate with two main rainy seasons. Temperatures range from 24°C (75°F) to 32°C (90°F).</p>
+
+    <h3>Sample Images</h</p>
+    <img src="{{ url_for('static', filename='images/kusini_1.jpg') }}" alt="Kusini Image 1">
+    <img src="{{ url_for('static', filename='images/kusini_2.jpg') }}" alt="Kusini Image 2">
+</section>
+{% endblock %}

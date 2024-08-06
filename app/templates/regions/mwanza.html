@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Mwanza</h1>
+    <p>Description of Mwanza region.</p>
+    <img src="{{ url_for('static', filename='images/mwanza.jpg') }}" alt="Mwanza">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='ilemela') }}" class="button">Ilemela</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='kwimba') }}" class="button">Kwimba</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='magu') }}" class="button">Magu</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='misungwi') }}" class="button">Misungwi</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='nyamagana') }}" class="button">Nyamagana</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='sengerema') }}" class="button">Sengerema</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mwanza', district_name='ukerewe') }}" class="button">Ukerewe</a></h1>
+    </div>
+</div>
+{% endblock %}

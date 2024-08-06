@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Pwani</h1>
+    <p>Description of Pwani region.</p>
+    <img src="{{ url_for('static', filename='images/pwani.jpg') }}" alt="Pwani">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='bagamoyo') }}" class="button">Bagamoyo</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='kibaha') }}" class="button">Kibaha</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='kisarawe') }}" class="button">Kisarawe</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='mafia') }}" class="button">Mafia</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='mkuranga') }}" class="button">Mkuranga</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='rufiji') }}" class="button">Rufiji</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='kibiti') }}" class="button">Kibiti</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='pwani', district_name='chalinze') }}" class="button">Chalinze</a></h1>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section>
+    <h2>Longido</h2>
+    <h3>Location</h3>
+    <p>Longido is located in the Arusha Region, known for its wildlife and Maasai culture.</p>
+
+    <h3>Cost of Living</h3>
+    <p>The cost of living in Longido is relatively low, with affordable housing and food prices.</p>
+
+    <h3>Available Economic Activities</h3>
+    <ul>
+        <li>Pastoralism: Livestock keeping is prominent.</li>
+        <li>Tourism: Cultural tours and wildlife safaris.</li>
+    </ul>
+
+    <h3>Weather Conditions</h3>
+    <p>Longido has a semi-arid climate with temperatures ranging from 18°C (64°F) to 30°C (86°F).</p>
+
+    <h3>Sample Images</h3>
+    <img src="{{ url_for('static', filename='images/longido_1.jpg') }}" alt="Longido Image 1">
+    <img src="{{ url_for('static', filename='images/longido_2.jpg') }}" alt="Longido Image 2">
+</section>
+{% endblock %}

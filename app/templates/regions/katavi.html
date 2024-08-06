@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Katavi</h1>
+    <p>Description of Katavi region.</p>
+    <img src="{{ url_for('static', filename='images/katavi.jpg') }}" alt="Katavi">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='katavi', district_name='mlele') }}" class="button">Mlele</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='katavi', district_name='mpanda') }}" class="button">Mpanda</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='katavi', district_name='mpimbwe') }}" class="button">Mpimbwe</a></h1>
+    </div>
+</div>
+{% endblock %}

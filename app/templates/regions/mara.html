@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pretty-container">
+    <h1>Mara</h1>
+    <p>Description of Mara region.</p>
+    <img src="{{ url_for('static', filename='images/mara.jpg') }}" alt="Mara">
+    <h2>Districts</h2>
+    <div>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='buhari') }}" class="button">Buhari</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='butiama') }}" class="button">Butiama</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='musoma_rural') }}" class="button">Musoma Rural</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='musoma_urban') }}" class="button">Musoma Urban</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='nyarugusu') }}" class="button">Nyarugusu</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='rorya') }}" class="button">Rorya</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='serengeti') }}" class="button">Serengeti</a></h1>
+        <h1><a href="{{ url_for('main.district', region_name='mara', district_name='tarime') }}" class="button">Tarime</a></h1>
+    </div>
+</div>
+{% endblock %}
